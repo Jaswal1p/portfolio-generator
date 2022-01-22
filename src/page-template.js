@@ -1,3 +1,18 @@
+// create the about section
+const generateAbout = aboutText => {
+  if (!aboutText) {
+    return '';
+  }
+
+
+return `
+  <section class="my-3" id="about">
+    <he class="text-dark bg-primary p-2 display-inline-block">About Me</h2>
+    <p>${aboutText}</p>
+  `;
+
+} 
+
 module.exports = templateData => {
 // // destructure page data by section
 const { projects, about, ...header } = templateData;
@@ -29,7 +44,7 @@ const { projects, about, ...header } = templateData;
       </header>   
 
       <main class="container my-5">
-
+         ${generateAbout(about)}
       </main>
 
       <footer class="container text-center py-3">
