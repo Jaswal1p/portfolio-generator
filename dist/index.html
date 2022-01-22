@@ -1,0 +1,90 @@
+
+    <!DOCTYPE html>
+    <html lang="en"> 
+
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Portfolio Demo</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300,500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+    </head>
+  
+    <body>
+      <header>
+        <div class="container flex-row justify-space-between align-center py-3">
+           <h1 class="page-title text-secondary bg-dark py-2 px-3">Jaswal</h1>
+           <nav class="flex-row">
+           <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/Jaswal1p">Github</a> 
+           </nav>
+        </div>
+      </header>   
+
+      <main class="container my-5">
+         
+  <section class="my-3" id="about">
+    <he class="text-dark bg-primary p-2 display-inline-block">About Me</h2>
+    <p>If we run app.js and answer all of the required prompts from the command line, we should see that both index.html and style.css were created in dist. If it doesn't look like this, or if there is an error printed to the command line, double-check that the dist folder is created in the correct location, directly at the root of the project's directory.</p>
+  
+         
+    <section class="my-3" id="portfolio">
+      <h2 class="text-dark bg-primary p-2 display-inline-block">Work</h2>
+      <div class="flex-row justify-space-between">
+      
+          <div class="col-12 mb-2 bg-dark text-light p-3">
+            <h3 class="portfolio-item-title text-light">run-buddy</h3>
+            <h5 class="portfolio-languages">
+              Built With:
+              JavaScript, HTML, CSS
+            </h5>
+            <p>Essentially, we wait for confirmation that the .writeFile() method ran successfully. When we get that confirmation, which in this case simply means not receiving an error, we then execute the .copyFile() method. It isn't mandatory for the application to work, but it does make the application run its functions one at a time, making it easier for us to track what's going on when.</p>
+            <a href="https://github.com/Jaswal1p/run-buddy.git" class="btn"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
+          </div>
+        
+          <div class="col-12 mb-2 bg-dark text-light p-3">
+            <h3 class="portfolio-item-title text-light">Weather Dashboard</h3>
+            <h5 class="portfolio-languages">
+              Built With:
+              JavaScript, HTML, CSS, Bootstrap
+            </h5>
+            <p>To execute the code in order, let's try and have the fs.copyFile() functionality occur inside the callback function for fs.writeFile(). This way, we know that the .writeFile() method successfully created the HTML file before we even attempt to copy the CSS file.</p>
+            <a href="https://github.com/Jaswal1p/SunCloudy-Weather-Dashboard.git" class="btn"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
+          </div>
+        
+
+      
+          <div class="col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column">
+            <h3 class="portfolio-item-title text-light">Taskinator</h3>
+            <h5 class="portfolio-languages">
+              Built With:
+              JavaScript, HTML, CSS, ES6, jQuery
+            </h5>
+            <p>We must always consider this when dealing with asynchronous code. We can have both of the fs functions run concurrently, because one isn't dependent on the other, but that could make it harder for us to determine what went wrong if an error occurs.</p>
+            <a href="https://github.com/Jaswal1p/taskinator-Jaswal1p.git" class="btn mt-auto"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
+          </div>
+        
+          <div class="col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column">
+            <h3 class="portfolio-item-title text-light">Horesian</h3>
+            <h5 class="portfolio-languages">
+              Built With:
+              JavaScript, HTML
+            </h5>
+            <p>Where do we want to include this functionality? It should probably go in the same .then() callback as the .writeFile() method so that it doesn't execute until we're done answering the prompts. But where exactly?</p>
+            <a href="https://github.com/Jaswal1p/Horiseon-Marketing-Jaswal1p-Refactor.git" class="btn mt-auto"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
+          </div>
+        
+      </div>
+    </section>
+  
+      </main>
+
+      <footer class="container text-center py-3">
+          <h3 class="text-dark">&copy; 2022 by Jaswal</h3>
+      </footer>
+
+    </body>
+    </html>
+    
